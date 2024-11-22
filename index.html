@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <p>Calculator</p>
+    </div>
+   <div id="calc">
+      <div id="content">
+         <form>
+            <div id="output">
+               <input type="text" id='res'>
+            </div>
+            <div class="btn">
+               <input type="button" class="a" value='C' onclick="Clear()" id="clear">
+               <input type="button" class="a" value='←' onclick="Back()" id="backspace">
+               <input type="button" class="a" value='%' onclick="Solve('%')">
+               <input type="button" class="a" value='/' onclick="Solve('/')">
+               <br>
+               <input type="button" class="a" value='7' onclick="Solve('7')">
+               <input type="button" class="a" value='8' onclick="Solve('8')">
+               <input type="button" value='9' class="a" onclick="Solve('9')">
+               <input type="button" value='x' class="a" onclick="Solve('*')">
+               <br>
+               <input type="button" class="a" value='4' onclick="Solve('4')">
+               <input type="button" value='5' class="a" onclick="Solve('5')">
+               <input type="button" value='6' class="a" onclick="Solve('6')">
+               <input type="button" class="a" value='-' onclick="Solve('-')">
+               <br>
+               <input type="button" value='1' class="a" onclick="Solve('1')">
+               <input type="button" value='2' class="a" onclick="Solve('2')">
+               <input type="button" value='3' class="a" onclick="Solve('3')">
+               <input type="button" value='+' class="a" onclick="Solve('+')">
+               <br>
+               <input type="button" value='00' class="a" onclick="Solve('00')">
+               <input type="button" value='0' class="a" onclick="Solve('0')">
+               <input type="button" value='.' class="a" onclick="Solve('.')">
+               <input type="button" value='=' class="ab" onclick="Result()">
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src='script.js'></script>
+</body>
+</html>
